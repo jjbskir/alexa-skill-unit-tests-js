@@ -1,0 +1,19 @@
+{
+  "name": "aws-skill-hello-world-unit-tests",
+  "version": "0.0.0",
+  "private": true,
+  "engines": {
+    "node": "4.3.2"
+  },
+  "scripts": {
+    "start": "node src/index.js",
+    "test": "jasmine-node spec/"
+  },
+  "dependencies": {
+    "underscore": "^1.8.3"
+  },
+  "devDependencies": {
+    "htmlparser2": "^3.9.0",
+    "jasmine-node": "^1.14.5"
+  }
+}
