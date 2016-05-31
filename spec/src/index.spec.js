@@ -1,7 +1,8 @@
 var index = require('../../src/index'),
-    intent =  require('../json/intent'),
-    session =  require('../json/session'),
-    response = require('../response');
+    framework = require('../aws-test-framework'),
+    intent = framework.intent,
+    session = framework.session,
+    response = framework.response;
 
 describe('index', function() {
     var helloWorld;

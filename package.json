@@ -1,5 +1,5 @@
 {
-  "name": "aws-skill-hello-world-unit-tests",
+  "name": "alexa-skill-unit-tests-js",
   "version": "0.0.0",
   "private": true,
   "engines": {
