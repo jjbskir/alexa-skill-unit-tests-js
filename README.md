@@ -1,17 +1,18 @@
 # Unit testing an Amazon Alexa skill with Node.js and Jasmine.
 A simple Amazon Alexa skill that demonstrates how to write unit tests with Jasmine.
-Developed while working on the Alexa skill [Chef Basil](http://chefbasil.co), the app that allows you to cook your favorite recipes hands-free.
+Developed while working on the Alexa skill [Chef Basil](http://chefbasil.co), the app that allows you to cook your favorite recipes hands-free. Read the companion article at [medium.com](https://medium.com/@jjbskir/unit-testing-an-amazon-alexa-skill-with-node-js-and-jasmine-98982544471f).
 
 ## Concepts
-1. How to write unit tests around your amazon alexa skill intents.
+1. How to write a unit test around an Amazon Alexa skill intent.
 2. Mocking requests and responses.
 3. Testing if SSML responses are valid.
 
 ## Setup
-1. Clone the git project.
-2. Install node modules `npm i`.
-3. Set up Jasmine `npm i jasmine-node -g`.
-4. Run tests `jasmine-node spec/`.
+1. Clone the git project. Project was built using node version 4.2.6.
+2. Go to the project directory `cd alexa-skill-unit-tests-js`
+3. Install node modules `npm i`
+4. Set up Jasmine `npm i jasmine-node -g`
+5. Run tests `jasmine-node spec/`
 
 ## TODO
 1. Card validator.

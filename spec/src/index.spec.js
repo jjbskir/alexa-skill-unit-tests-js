@@ -1,5 +1,5 @@
 var index = require('../../src/index'),
-    framework = require('../aws-test-framework'),
+    framework = require('../alexa-test-framework'),
     intent = framework.intent,
     session = framework.session,
     response = framework.response;
@@ -7,7 +7,7 @@ var index = require('../../src/index'),
 describe('index', function() {
     var helloWorld;
 
-    require('../customMatchers');
+    framework.beforeEachMatchers();
     beforeEach(function() {
         helloWorld = new index.HelloWorld();
     });

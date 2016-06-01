@@ -6,7 +6,7 @@ const TYPES = ssmlConstants.TYPES;
 const TAGS = ssmlConstants.TAGS;
 const TAG_NAMES = ssmlConstants.TAG_NAMES;
 
-var validator = {
+var validator = module.exports.validator = {
     _errors: [],
     PlainText: function(speech) {
         return speech.indexOf('<speak>') !== 0;
@@ -73,12 +73,12 @@ var validator = {
     }
 };
 
-beforeEach(function() {
-    this.addMatchers({
-        isSSML: function(expected) {
-            return validator.test(this.actual, expected);
-        }
+module.exports.beforeEachMatchers = function() {
+    beforeEach(function() {
+        this.addMatchers({
+            isSSML: function(expected) {
+                return validator.test(this.actual, expected);
+            }
+        });
     });
-});
-
-module.exports.validator = validator;
+}
