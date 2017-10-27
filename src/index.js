@@ -45,7 +45,6 @@ HelloWorld.prototype.constructor = HelloWorld;
 HelloWorld.prototype.eventHandlers.onSessionStarted = function (sessionStartedRequest, session) {
     console.log("HelloWorld onSessionStarted requestId: " + sessionStartedRequest.requestId
         + ", sessionId: " + session.sessionId);
-    // any initialization logic goes here
 };
 
 HelloWorld.prototype.eventHandlers.onLaunch = function (launchRequest, session, response) {
@@ -58,11 +57,9 @@ HelloWorld.prototype.eventHandlers.onLaunch = function (launchRequest, session, 
 HelloWorld.prototype.eventHandlers.onSessionEnded = function (sessionEndedRequest, session) {
     console.log("HelloWorld onSessionEnded requestId: " + sessionEndedRequest.requestId
         + ", sessionId: " + session.sessionId);
-    // any cleanup logic goes here
 };
 
 HelloWorld.prototype.intentHandlers = {
-    // register custom intent handlers
     "HelloWorldIntent": function (intent, session, response) {
         response.tellWithCard("Hello World!", "Greeter", "Hello World!");
     },
